@@ -14,6 +14,8 @@ export const StyledCheckbox = styled.div`
     }
 
     & > svg {
+        max-width: 15px;
+        max-height: 15px;
         position: absolute;
         top: 50%;
         left: 50%;
