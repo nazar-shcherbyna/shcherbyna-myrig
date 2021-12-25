@@ -1,13 +1,14 @@
 import React from 'react';
+import { StyledLoader } from './styles';
 
-const Loader = props => {
+const Loader = () => {
     return (
-            <div className="lds-ring">
+            <StyledLoader>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </StyledLoader>
     )
 }
 

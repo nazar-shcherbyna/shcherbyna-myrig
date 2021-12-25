@@ -4,6 +4,7 @@ import { TableRows } from './_rows/_rows'
 import { useDispatch, useSelector} from 'react-redux';
 import { selectRow, selecteAllRows, deleteRow } from '../../store/tableStore';
 import { Loader } from '../../components';
+import { StyledTable } from './styles';
 
 const Table = props => {
 
@@ -25,23 +26,25 @@ const Table = props => {
  
     return(
         <>
-        <table className="table">
-            <thead>
-                <TableHead 
-                   selecteAllRowsHandler={selecteAllRowsHandler} 
-                   tableData={tableData}
-                   checkedRows={checkedRows}/>
-            </thead>
-            <tbody className="users" >
-                <TableRows 
-                    selectRowHandler={selectRowHandler} 
-                    deleteRowHandler={deleteRowHandler} 
-                    tableData={tableData}
-                    currentUSD={currentUSD}
-                    checkedRows={checkedRows}/>
-            </tbody>
-        </table>
-        { isLoading && <Loader/> }
+            <StyledTable>
+                <thead>
+                    <TableHead 
+                        selecteAllRowsHandler={selecteAllRowsHandler} 
+                        tableData={tableData}
+                        checkedRows={checkedRows}
+                    />
+                </thead>
+                <tbody className="users" >
+                    <TableRows 
+                        selectRowHandler={selectRowHandler} 
+                        deleteRowHandler={deleteRowHandler} 
+                        tableData={tableData}
+                        currentUSD={currentUSD}
+                        checkedRows={checkedRows}
+                    />
+                </tbody>
+            </StyledTable>
+            { isLoading && <Loader/> }
         </>
     )
 };

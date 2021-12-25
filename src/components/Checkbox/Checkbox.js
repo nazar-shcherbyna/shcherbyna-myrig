@@ -1,18 +1,23 @@
+import classNames from 'classnames';
 import React from 'react';
+import { CheckMark } from '../../icons';
+import { StyledCheckbox } from './styles';
 
 
 
 const Checkbox = props => {
   
     return (
-        <div className="checkbox">
-            <input className="checkbox__input" 
-                   type="checkbox" id={`checkbox_${props.id}`}
-                   onChange={props.selectedHandler}
-                   checked={props.checked}
-            />    
-            <label className="checkbox__label" htmlFor={`checkbox_${props.id}`}></label>                                 
-        </div>
+        <StyledCheckbox 
+            onClick={props.selectedHandler}
+            className={classNames({
+                'checked': props.checked
+            })}
+        >
+            {props.checked 
+                ? <CheckMark/>
+                : null}
+        </StyledCheckbox>
     )
 };
 

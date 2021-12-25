@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { fetchData, fetchConvertEurToUsd } from './store/tableStore'
 import { Table } from './components'
 import { DeleteSelectedRowsBtn } from './components';
+import Title from './components/Title/Title';
 
 
 const App = props =>    {
@@ -14,7 +15,7 @@ const App = props =>    {
    
     return (
         <div className="my-app">
-            <h1 className="table__title">Таблица пользователей</h1>
+            <Title>Таблица пользователей</Title>
             <Table />
             <DeleteSelectedRowsBtn dispatch={dispatch}/>
         </div>
