@@ -6,3 +6,9 @@
     margin: 0 auto;
     color: #4c4c4c;
 }
+
+.bottom-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -5,6 +5,7 @@ import { Table } from './components'
 import { DeleteSelectedRowsBtn } from './components';
 import Title from './components/Title/Title';
 import MetricTabs from './components/MetricTabs/MetricTabs';
+import Pagination from './components/Pagination/Pagination';
 
 
 const App = props =>    {
@@ -19,7 +20,10 @@ const App = props =>    {
             <Title>Таблица пользователей</Title>
             <MetricTabs />
             <Table />
-            <DeleteSelectedRowsBtn dispatch={dispatch}/>
+            <div className='bottom-btns'>
+                <Pagination />
+                <DeleteSelectedRowsBtn dispatch={dispatch}/>
+            </div>
         </div>
     )
 }
