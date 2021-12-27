@@ -1,0 +1,1 @@
+export const getSmFromIbs = (valInIbs) => (valInIbs[0] + '.' + (valInIbs.slice(1).reduce((sm, ibs) => sm + ibs, ''))) * 30.48
