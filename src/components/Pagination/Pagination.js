@@ -2,7 +2,6 @@ import React from 'react'
 import { Arrow } from '../../icons'
 import { StyledPagination } from './styles'
 import PGNButton from './_pgnButton/PGNButton'
-import { v4 as uuidv4 } from 'uuid';
 
 const Pagination = () => {
 
@@ -11,7 +10,7 @@ const Pagination = () => {
             return (
                 <>
                     {array.map((el, idx) => (
-                        <PGNButton key={uuidv4()}>
+                        <PGNButton key={idx}>
                             {idx}
                         </PGNButton>
                     ))}
@@ -21,7 +20,7 @@ const Pagination = () => {
             return (
                 <>
                     {array.slice(0, 3).map((el, idx) => (
-                        <PGNButton key={uuidv4()}>
+                        <PGNButton key={idx}>
                             {idx + 1}
                         </PGNButton>
                     ))}

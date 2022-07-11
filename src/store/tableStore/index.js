@@ -4,15 +4,15 @@ import { v4 as uuidv4 } from 'uuid';
 export const fetchData = createAsyncThunk(
    'table/fetchData',
     async () => {
-    const response = await fetch(`https://api.npoint.io/324f4ca2cdd639760638`);
-    const responseData = await response.json();
-    const data = responseData.map( el => {
-        return {
-            id: uuidv4(),
-            ...el,
-        };
-    });  
-    return data;   
+        const response = await fetch(`https://api.npoint.io/324f4ca2cdd639760638`);
+        const responseData = await response.json();
+        const data = responseData.map( el => {
+            return {
+                id: uuidv4(),
+                ...el,
+            };
+        });  
+        return data;   
     },
 );
 

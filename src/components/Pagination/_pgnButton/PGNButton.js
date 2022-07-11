@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyledPGNButton } from './styles'
 
-const PGNButton = (props) => {
+const PGNButton = ({styles, children}) => {
     return (
-        <StyledPGNButton styles={props.styles}>
-            {props.children}
+        <StyledPGNButton styles={styles}>
+            {children}
         </StyledPGNButton>
     )
 }

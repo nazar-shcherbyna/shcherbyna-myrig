@@ -9,7 +9,6 @@ import { Pencil, TrashCan } from '../../../icons';
 import { useSelector } from 'react-redux';
 import { metricSystNames } from '../../../store/constants';
 import { getNumbFromStr } from '../../../utils/getNumbFromStr';
-import { useState } from 'react';
 import { getSmFromIbs } from '../../../utils/getSmFromIbs';
 
 const TableRows = props => {
