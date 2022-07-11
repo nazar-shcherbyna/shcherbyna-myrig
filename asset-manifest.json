@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shcherbyna-myrig/static/css/main.94891987.chunk.css",
+    "main.js": "/shcherbyna-myrig/static/js/main.3c659155.chunk.js",
+    "main.js.map": "/shcherbyna-myrig/static/js/main.3c659155.chunk.js.map",
+    "runtime-main.js": "/shcherbyna-myrig/static/js/runtime-main.2749a7c5.js",
+    "runtime-main.js.map": "/shcherbyna-myrig/static/js/runtime-main.2749a7c5.js.map",
+    "static/js/2.a0b894d4.chunk.js": "/shcherbyna-myrig/static/js/2.a0b894d4.chunk.js",
+    "static/js/2.a0b894d4.chunk.js.map": "/shcherbyna-myrig/static/js/2.a0b894d4.chunk.js.map",
+    "index.html": "/shcherbyna-myrig/index.html",
+    "static/css/main.94891987.chunk.css.map": "/shcherbyna-myrig/static/css/main.94891987.chunk.css.map",
+    "static/js/2.a0b894d4.chunk.js.LICENSE.txt": "/shcherbyna-myrig/static/js/2.a0b894d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2749a7c5.js",
+    "static/js/2.a0b894d4.chunk.js",
+    "static/css/main.94891987.chunk.css",
+    "static/js/main.3c659155.chunk.js"
+  ]
+}
