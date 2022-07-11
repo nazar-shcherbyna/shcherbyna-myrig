@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const StyledLoader = styled.div`
-    display: block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 
   & div {
     box-sizing: border-box;

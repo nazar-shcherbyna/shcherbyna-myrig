@@ -3,12 +3,12 @@ import { StyledLoader } from './styles';
 
 const Loader = () => {
     return (
-            <StyledLoader>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </StyledLoader>
+        <StyledLoader>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </StyledLoader>
     )
 }
 

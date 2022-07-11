@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledCheckbox = styled.div`
     position: relative;
@@ -9,9 +9,9 @@ export const StyledCheckbox = styled.div`
     margin: 0 22px;
     cursor: pointer;
 
-    &.checked {
+    ${p => p.cheched && css`
         border: 2px solid #55A985;
-    }
+    `}
 
     & > svg {
         max-width: 15px;
