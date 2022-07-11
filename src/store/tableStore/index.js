@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const fetchData = createAsyncThunk(
    'table/fetchData',
     async () => {
-        const response = await fetch(`https://api.npoint.io/324f4ca2cdd639760638`);
+        const response = await fetch(`https://api.npoint.io/${process.env.REACT_APP_NPOINT_KEY}`);
         const responseData = await response.json();
         const data = responseData.map( el => {
             return {
@@ -19,7 +19,7 @@ export const fetchData = createAsyncThunk(
 export const fetchConvertEurToUsd = createAsyncThunk(
     'table/fetchConvertEurToUsd',
     async () => {
-        const response = await fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=f84f26bafbf6023d1d0f6a254c1b6831&symbols=USD`);
+        const response = await fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=${process.env.REACT_APP_SECRET_KEY}&symbols=USD`);
         const responseData = await response.json();
         return responseData;
     }
