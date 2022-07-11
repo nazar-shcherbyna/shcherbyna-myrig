@@ -1,6 +1,5 @@
 import React from 'react';
 import { Checkbox } from '../../index';
-import classNames from 'classnames';
 import dateConvector from '../../../utils/getUserYearFromMIlliSec';
 import weightConvertor from '../../../utils/convertPoundsToKilogram'
 import heightConvertor from '../../../utils/heightFromPoundsAdnIbsToSantimeters'
@@ -48,9 +47,8 @@ const TableRows = props => {
                 {props.tableData.map((el, idx) =>{
                     const isSelected = props.checkedRows.includes(el.id);
                     return (
-                        <StyledRows className={classNames({
-                                'user__row': true,
-                            })}
+                        <StyledRows 
+                            type={'row'}
                             key={idx}
                         >
                             <td className="width-50">

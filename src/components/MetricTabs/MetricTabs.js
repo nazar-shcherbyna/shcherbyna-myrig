@@ -1,10 +1,9 @@
-import classNames from 'classnames'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { metricSystNames } from '../../store/constants'
 import metricSystStore, { setMetricSystem } from '../../store/metricSystStore'
-import { StyledMetricTabs } from './styles'
+import { StyledMetricTab, StyledMetricTabs } from './styles'
 
 const MetricTabs = () => {
 
@@ -30,22 +29,18 @@ const MetricTabs = () => {
 
     return (
         <StyledMetricTabs>
-            <div 
-                className={classNames({
-                    'active': metricSyst === metricSystNames.metric
-                })}
+            <StyledMetricTab
+                active={metricSyst === metricSystNames.metric}
                 onClick={() => changeMetricSyst(metricSystNames.metric)}
             >
                 Метрическая система
-            </div>
-            <div 
-                className={classNames({
-                    'active': metricSyst === metricSystNames.england
-                })}
+            </StyledMetricTab>
+            <StyledMetricTab
+                active={metricSyst === metricSystNames.england}
                 onClick={() => changeMetricSyst(metricSystNames.england)}
             >
                 Английская система
-            </div>
+            </StyledMetricTab>
         </StyledMetricTabs>
     )
 }

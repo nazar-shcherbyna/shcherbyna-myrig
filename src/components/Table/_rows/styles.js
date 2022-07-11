@@ -1,19 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledRows = styled.tr`
     height: 48px;
 
-    &.user__row {
-        /* text-align: center; */
-    }
+    ${p => p.type === 'row' && css`
+        &:nth-child(even) {
+            background-color: #fafafa;
+        }
 
-    &.user__row:nth-child(even) {
-        background-color: #fafafa;
-    }
-
-    &.user__row:nth-child(odd) {
-        background-color: #fff;
-    }
+        &:nth-child(odd) {
+            background-color: #fff;
+        }
+    `}
 
     & .svg {
         width: 50px;
