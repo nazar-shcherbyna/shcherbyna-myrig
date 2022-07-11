@@ -29,11 +29,9 @@ const TableRows = props => {
             return midWeight + (arrWeightInNumb[0] + '.' + arrWeightInNumb.slice(1).reduce((accum, num) => accum + num)) * 1
         }, 0) / props.tableData.length).toFixed(2)
         const arrWithAvarageValue = avarageHeightWithPoint.split('.')
-        console.log('arrWithAvarageValue',arrWithAvarageValue);
         
         if (metricSyst === metricSystNames.metric) {
             const arrWithAvarageValSm = getSmFromIbs(arrWithAvarageValue)
-            console.log('arrWithAvarageValSm',arrWithAvarageValSm);
 
             if (arrWithAvarageValSm < 200) {
                 return `1м ${(arrWithAvarageValSm % 100).toFixed()}см`

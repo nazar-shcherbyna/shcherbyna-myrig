@@ -99,9 +99,7 @@ export const tableStore = createSlice({
         });
 
         builder.addCase(fetchConvertEurToUsd.rejected, 
-        (state, action ) => {
-            console.log(state);
-        });
+        (state, action ) => {});
     }
 });
 

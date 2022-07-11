@@ -10,7 +10,6 @@ const MetricTabs = () => {
 
     const { metricSyst } = useSelector(store => store.metricSystStore)
     const dispatch = useDispatch()
-    console.log(metricSyst);
 
     const changeMetricSyst = (system) => {
         switch (system) {
